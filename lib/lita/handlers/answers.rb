@@ -4,9 +4,9 @@ module Lita
   module Handlers
     class Answers < Handler
       TEXT = /[\w\s\,\.\-\/:–]+/
-      QUESTION = /(?:'|")(#{TEXT.source}\?)(?:'|")/
-      ANSWER = /(?:'|")(#{TEXT.source}\.?)(?:'|")/
-      QUESTION2 = /(#{TEXT.source}\?)/
+      QUESTION = /(?:'|")(#{TEXT.source})(?:'|")/
+      ANSWER = /(?:'|")(#{TEXT.source})(?:'|")/
+      QUESTION2 = /(#{TEXT.source})/
 
 
       route(/^(\w+)([\.#]|::)?(\w+)?$/, :documentation, command: false, help: {
