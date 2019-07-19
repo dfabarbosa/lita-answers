@@ -21,7 +21,7 @@ module Lita
         "remember 'meme' with 'link or phrase'" => "The response for 'meme' is 'link or phrase'."
       })
 
-      route(/^answer\s#{QUESTION2.source}$/i, :show, command: true, help: {
+      route(/^meme\s#{QUESTION2.source}$/i, :show, command: true, help: {
         "meme 'meme'" => "link."
       })
 
